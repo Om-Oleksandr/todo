@@ -1,0 +1,25 @@
+.container {
+  &.open {
+    & .select {
+      & svg {
+        fill: rgb(84, 5, 158);
+        transform: rotate(180deg);
+      }
+    }
+  }
+  & .select {
+    border-radius: unset !important;
+    & svg {
+      fill: rgb(123, 27, 212);
+      transition: all 0.4s ease 0s;
+    }
+  }
+  & .options {
+    border-radius: unset !important;
+    margin: 0 !important;
+    transition: all 0.4s ease 0s;
+    & .options__list {
+      padding: 0 !important;
+    }
+  }
+}
